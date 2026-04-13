@@ -203,6 +203,11 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
+// Observe all static reveal elements
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+});
+
 // Initialize everything
 document.addEventListener('DOMContentLoaded', initAppData);
 window.addEventListener('load', () => {
