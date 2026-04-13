@@ -9,22 +9,25 @@ public_folder: "images"
 collections:
   - name: "fleet"
     label: "Inventory (Frota)"
-    file: "data/fleet.json"
-    format: json
-    fields:
-      - label: "Cars"
-        name: "cars"
-        widget: "list"
+    files:
+      - name: "fleet"
+        label: "Cars"
+        file: "data/fleet.json"
+        format: json
         fields:
-          - { label: "Car Name", name: "name", widget: "string" }
-          - { label: "Year", name: "year", widget: "string" }
-          - { label: "Price per Day", name: "price", widget: "string" }
-          - { label: "City Location", name: "location", widget: "select", options: ["miami", "orlando", "both"] }
-          - { label: "Badge (Optional)", name: "badge", widget: "string", required: false }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Seats", name: "seats", widget: "string" }
-          - { label: "Transmission", name: "transmission", widget: "string", default: "Auto" }
-          - { label: "Horsepower", name: "hp", widget: "string" }
+          - label: "Cars"
+            name: "cars"
+            widget: "list"
+            fields:
+              - { label: "Car Name", name: "name", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Price per Day", name: "price", widget: "string" }
+              - { label: "City Location", name: "location", widget: "select", options: ["miami", "orlando", "both"] }
+              - { label: "Badge (Optional)", name: "badge", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Seats", name: "seats", widget: "string" }
+              - { label: "Transmission", name: "transmission", widget: "string", default: "Auto" }
+              - { label: "Horsepower", name: "hp", widget: "string" }
 
   - name: "settings"
     label: "Site Settings & Text"
