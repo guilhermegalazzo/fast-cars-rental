@@ -1,0 +1,11 @@
+{
+  "name": "Lamborghini Huracán EVO",
+  "year": "2024",
+  "price": "$1,495",
+  "location": "miami",
+  "badge": "Popular",
+  "image": "images/car-1.png",
+  "seats": "2",
+  "transmission": "Auto",
+  "hp": "630 HP"
+}

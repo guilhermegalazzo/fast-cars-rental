@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "fleet"
+    label: "Inventory (Frota)"
+    folder: "data/fleet"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Car Name", name: "name", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Price per Day", name: "price", widget: "string" }
+      - { label: "City Location", name: "location", widget: "select", options: ["miami", "orlando", "both"] }
+      - { label: "Badge (Optional)", name: "badge", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Seats", name: "seats", widget: "string" }
+      - { label: "Transmission", name: "transmission", widget: "string", default: "Auto" }
+      - { label: "Horsepower", name: "hp", widget: "string" }
+
+  - name: "settings"
+    label: "Site Settings & Text"
+    files:
+      - name: "content"
+        label: "Home Page Content"
+        file: "data/content.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }

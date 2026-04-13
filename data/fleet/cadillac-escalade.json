@@ -1,0 +1,11 @@
+{
+  "name": "Cadillac Escalade",
+  "year": "2024",
+  "price": "$495",
+  "location": "both",
+  "badge": "New",
+  "image": "images/car-3.png",
+  "seats": "7",
+  "transmission": "Auto",
+  "hp": "420 HP"
+}

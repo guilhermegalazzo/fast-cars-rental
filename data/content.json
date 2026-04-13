@@ -1,0 +1,50 @@
+{
+  "en": {
+    "nav_fleet": "Fleet",
+    "nav_about": "About",
+    "nav_locations": "Locations",
+    "nav_reviews": "Reviews",
+    "nav_contact": "Contact",
+    "hero_title": "Drive the <span class=\"accent\">Experience</span> You Deserve",
+    "hero_subtitle": "Premium luxury and exotic car rental in Miami and Orlando. We deliver to your location — airport, hotel, or residence.",
+    "hero_contact": "Contact Us",
+    "hero_viewFleet": "View Our Fleet",
+    "fleet_tag": "Our Fleet",
+    "fleet_title": "Exotic Car Rental",
+    "fleet_subtitle_miami": "Choose your dream car. We deliver anywhere in Miami.",
+    "fleet_subtitle_orlando": "Choose your dream car. We deliver anywhere in Orlando.",
+    "whatsapp_number": "+19542790200"
+  },
+  "pt": {
+    "nav_fleet": "Frota",
+    "nav_about": "Sobre",
+    "nav_locations": "Localizações",
+    "nav_reviews": "Avaliações",
+    "nav_contact": "Contato",
+    "hero_title": "Dirija a <span class=\"accent\">Experiência</span> que Você Merece",
+    "hero_subtitle": "Locadora de veículos de luxo em Miami e Orlando. Entregamos onde você estiver — aeroporto, hotel ou residência.",
+    "hero_contact": "Fale Conosco",
+    "hero_viewFleet": "Veja Nossa Frota",
+    "fleet_tag": "Nossa Frota",
+    "fleet_title": "Aluguel de Carros Exóticos",
+    "fleet_subtitle_miami": "Escolha o carro dos seus sonhos. Entregamos em qualquer lugar de Miami.",
+    "fleet_subtitle_orlando": "Escolha o carro dos seus sonhos. Entregamos em qualquer lugar de Orlando.",
+    "whatsapp_number": "+19542790200"
+  },
+  "es": {
+    "nav_fleet": "Flota",
+    "nav_about": "Nosotros",
+    "nav_locations": "Ubicaciones",
+    "nav_reviews": "Reseñas",
+    "nav_contact": "Contacto",
+    "hero_title": "Conduce la <span class=\"accent\">Experiencia</span> que Mereces",
+    "hero_subtitle": "Alquiler de vehículos de lujo en Miami y Orlando. Entregamos donde estés — aeropuerto, hotel o residencia.",
+    "hero_contact": "Contáctenos",
+    "hero_viewFleet": "Ver Nuestra Flota",
+    "fleet_tag": "Nuestra Flota",
+    "fleet_title": "Alquiler de Autos Exóticos",
+    "fleet_subtitle_miami": "Elige el auto de tus sueños. Entregamos en cualquier lugar de Miami.",
+    "fleet_subtitle_orlando": "Elige el auto de tus sonhos. Entregamos en cualquier lugar de Orlando.",
+    "whatsapp_number": "+19542790200"
+  }
+}
