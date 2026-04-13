@@ -8,32 +8,20 @@ let currentCity = 'miami';
 // ===== DATA FETCHING =====
 async function initAppData() {
   try {
-    // 1. Load Site Content & Translations
-    const contentRes = await fetch('data/content.json');
+    const [contentRes, fleetRes] = await Promise.all([
+      fetch('data/content.json'),
+      fetch('data/fleet.json')
+    ]);
+
     translations = await contentRes.json();
+    const fleetFile = await fleetRes.json();
+    fleetData = fleetFile.cars || [];
 
-    // 2. Load Fleet Data
-    // For this prototype, we'll fetch the specific files we created.
-    // In production with Decap CMS, you can use their API or 
-    // a pre-built index.
-    const carFiles = [
-      'data/fleet/huracan.json',
-      'data/fleet/ferrari-california.json',
-      'data/fleet/cadillac-escalade.json',
-      'data/fleet/urus.json',
-      'data/fleet/volvo-xc90.json'
-    ];
-
-    const carPromises = carFiles.map(file => fetch(file).then(res => res.json()));
-    fleetData = await Promise.all(carPromises);
-
-    // Initialize UI
     setLanguage('en');
     renderFleet();
-    console.log('✅ Data loaded from CMS files');
+    console.log('✅ Data loaded');
   } catch (error) {
-    console.error('❌ Error loading CMS data:', error);
-    // Fallback or alert user
+    console.error('❌ Error loading data:', error);
   }
 }
 
