@@ -761,6 +761,33 @@ ul { list-style: none; }
   color: white;
 }
 
+/* ===== ABOUT BIO ===== */
+.about-bio {
+  padding: var(--section-padding);
+  background: var(--fc-black);
+}
+
+.about-bio-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-bio-inner .section-title {
+  margin-bottom: 2rem;
+}
+
+.about-bio-text {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.25rem;
+}
+
+.about-bio-text:last-child {
+  margin-bottom: 0;
+}
+
 /* ===== ABOUT / WHY US ===== */
 .why-us {
   padding: var(--section-padding);
