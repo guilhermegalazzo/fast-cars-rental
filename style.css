@@ -99,17 +99,13 @@ ul { list-style: none; }
   justify-content: space-between;
 }
 
-.navbar-logo {
-  flex: 1;
-}
-
 .navbar-links {
-  flex: 0 0 auto;
+  margin-left: auto;
+  margin-right: 32px;
 }
 
 .navbar-cta {
-  flex: 1;
-  justify-content: flex-end;
+  flex-shrink: 0;
 }
 
 .navbar-logo {
